@@ -1,0 +1,8 @@
+library(dplyr)
+library(ggplot2)
+head(iris)
+summary(iris)
+iris_grouped <- iris %>% 
+  group_by(Species) %>%
+  summarize(mean_sepal_length = mean(Sepal.Length))
+iris_grouped
