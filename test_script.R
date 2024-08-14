@@ -11,3 +11,9 @@ ggplot(iris_grouped, aes(x=Species, y = mean_sepal_length)) +
   geom_col() +
   xlab("Species") +
   ylab("Mean Sepal Length")
+
+
+ggplot(iris, aes(x=Sepal.Length)) +
+  geom_histogram() +
+  xlab("Species") +
+  ylab("Mean Sepal Length")
